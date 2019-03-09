@@ -1,3 +1,6 @@
+html {
+    height: 100%;
+}
 p, span, ol, ul, li, a,
 label,
 input,
@@ -36,6 +39,9 @@ nav a:hover {
 }
 body {
     background-image: url("../images/geo-dark.png");
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 header {
     background-color: #fff;
@@ -43,6 +49,7 @@ header {
     z-index: 999;
     position: fixed;
     width: 100%;
+    flex-shrink: 0;
 }
 header .container {
     display: flex;
@@ -56,8 +63,9 @@ header h2 {
     color: #fff;
 }
 section {
+    flex: 1 0 auto;
     margin: 0 auto 60px;
-    min-height: calc(80vh - 11px);
+    /* min-height: calc(80vh - 11px); */
     padding: 30px;
     position: relative;
         top: 81px;
@@ -159,10 +167,10 @@ footer {
     background-color: #666;
     border-top: #4aaaa5 solid 8px;
     color: #ccc;
+    flex-shrink: 0;
     font-size: 0.8rem;
+    margin-top: 21px;
     padding: 30px 0 10px;
-    position: relative;
-        bottom: -21px;
     text-align: center;
     width: 100%;
 }
