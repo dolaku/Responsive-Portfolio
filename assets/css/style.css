@@ -187,6 +187,16 @@ footer {
     nav {
         margin-right: 30px;
     }
+    #portfolio-content .gallery .project {
+        width: 250px;
+    }
+    #portfolio-content .gallery h4 {
+        font-size: 1.1rem;
+        padding: 10px 15px;
+    }
+    #portfolio-content .gallery h4:hover {
+        padding-top: 140px;
+    }
     #contact-content .container {
         width: 600px;
     }
@@ -194,9 +204,6 @@ footer {
 @media only screen and (max-width: 768px) {
     #about-content .home-img {
         padding-bottom: 10px;
-    }
-    #portfolio-content .gallery .project {
-        margin-right: 0;
     }
     #contact-content .container {
         width: 525px;
@@ -225,6 +232,20 @@ footer {
     section {
         top: 130px;
     }
+    #portfolio-content .gallery .project {
+        margin-right: 0;
+        width: 100%;
+    }
+    #portfolio-content .gallery .thumbnail {
+        width: 100%;
+    }
+    #portfolio-content .gallery h4 {
+        font-size: 1.25rem;
+        padding: 15px;
+    }
+    #portfolio-content .gallery h4:hover {
+        padding-top: 59.5%;
+    }
     #contact-content .container {
         width: 450px;
     }
@@ -233,7 +254,15 @@ footer {
     }
 }
 @media only screen and (max-width: 575px) {
+    #portfolio-content .gallery h4:hover {
+        padding-top: 59%;
+    }
     #contact-content .container {
         width: 300px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    #portfolio-content .gallery h4:hover {
+        padding-top: 55%;
     }
 }
