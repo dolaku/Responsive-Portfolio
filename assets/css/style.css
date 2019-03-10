@@ -46,10 +46,10 @@ body {
 header {
     background-color: #fff;
     border-bottom: #ccc solid 3px;
-    z-index: 999;
+    flex-shrink: 0;
     position: fixed;
     width: 100%;
-    flex-shrink: 0;
+    z-index: 999;
 }
 header .container {
     display: flex;
@@ -65,7 +65,6 @@ header h2 {
 section {
     flex: 1 0 auto;
     margin: 0 auto 60px;
-    /* min-height: calc(80vh - 11px); */
     padding: 30px;
     position: relative;
         top: 81px;
@@ -136,6 +135,9 @@ input,
 textarea {
     display: block;
 }
+#contact-content .container {
+    width: 900px;
+}
 #contact-content label {
     margin-top: 15px;
     margin-bottom: 5px;
@@ -175,22 +177,21 @@ footer {
     width: 100%;
 }
 
-@media only screen and (max-width: 960px) {
+/***** Media Queries *****/
+@media only screen and (max-width: 1020px) {
+    #contact-content .container {
+        width: 800px;
+    }
+}
+@media only screen and (max-width: 980px) {
     nav {
         margin-right: 30px;
     }
+    #contact-content .container {
+        width: 600px;
+    }
 }
-@media only screen and (max-width: 550px) {
-    nav li {
-        border-right: none;
-        border-bottom: #ccc solid 1px;
-        display: block;
-        padding: 4px 0;
-        text-align: right;
-    }
-    nav li:last-child {
-        border-bottom: none;
-    }
+@media only screen and (max-width: 768px) {
     #about-content .home-img {
         float: none;
         height: auto;
@@ -198,5 +199,34 @@ footer {
     }
     #portfolio-content .gallery .project {
         margin-right: 0;
+    }
+    #contact-content .container {
+        width: 525px;
+    }
+}
+@media only screen and (max-width: 640px) {
+    header .container {
+        flex-direction: column;
+    }
+    header a:first-of-type {
+        text-align: center;
+        width: 100%;
+    }
+    nav {
+        margin: 18px;
+    }
+    nav li:first-child {
+        padding-left: unset;
+    }
+    section {
+        top: 130px;
+    }
+    #contact-content .container {
+        width: 450px;
+    }
+}
+@media only screen and (max-width: 575px) {
+    #contact-content .container {
+        width: 300px;
     }
 }
