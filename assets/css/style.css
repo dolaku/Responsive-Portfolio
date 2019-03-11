@@ -121,13 +121,12 @@ section h2 {
     width: calc(100% - 30px);
 }
 #portfolio-content .gallery h4:hover {
-    bottom: 3px;
+    bottom: 7%;
     box-shadow: inset 0px 0px 10px #226966;
     filter: hue-rotate(180deg);
-    opacity: .65;
-    padding-top: 165px;
+    opacity: .75;
     text-shadow: 0 0 3px #fff;
-    transition: .4s;
+    transition: .2s;
 }
 /***** Contact Page *****/
 label,
@@ -194,9 +193,6 @@ footer {
         font-size: 1.1rem;
         padding: 10px 15px;
     }
-    #portfolio-content .gallery h4:hover {
-        padding-top: 140px;
-    }
     #contact-content .container {
         width: 600px;
     }
@@ -243,9 +239,6 @@ footer {
         font-size: 1.25rem;
         padding: 15px;
     }
-    #portfolio-content .gallery h4:hover {
-        padding-top: 59.5%;
-    }
     #contact-content .container {
         width: 450px;
     }
@@ -254,15 +247,7 @@ footer {
     }
 }
 @media only screen and (max-width: 575px) {
-    #portfolio-content .gallery h4:hover {
-        padding-top: 59%;
-    }
     #contact-content .container {
         width: 300px;
-    }
-}
-@media only screen and (max-width: 450px) {
-    #portfolio-content .gallery h4:hover {
-        padding-top: 55%;
     }
 }
