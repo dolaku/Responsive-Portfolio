@@ -98,15 +98,21 @@ section h2 {
 #portfolio-content .gallery {
     display: flex;
         flex-wrap: wrap;
+        justify-content: center
 }
 #portfolio-content .gallery .project {
-    margin: 0 30px 40px 0;
+    border: 3px solid #4aaaa56d;
+    border-radius: 5px;
+    margin: 15px;
+    overflow: hidden;
     position: relative;
-    width: 300px;
+    width: 29%;
 }
 #portfolio-content .gallery .thumbnail {
     max-width: 100%;
+    max-height: 250px;
     object-fit: cover;
+    width: 100%;
 }
 #portfolio-content .gallery h4 {
     background-color: #4aaaa5;
